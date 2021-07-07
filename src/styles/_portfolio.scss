@@ -1,0 +1,110 @@
+.PortfolioPage {
+}
+
+.portfolios-container {
+    margin-top: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    @media screen and (max-width:800px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio {
+        .image-data {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 98%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.616);
+                opacity: 0;
+                transition: all 0.2s ease-in-out;
+            }
+            &:hover::before {
+                opacity: 1;
+            }
+            img {
+                width: 100%;
+                height: 30vh;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .hover-items {
+                list-style: none;
+                position: absolute;
+                padding: 0.2rem;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                visibility: hidden;
+                li {
+                    a {
+                        color: rgba(255, 255, 255, 0.795);
+                        padding: 2rem;
+                        font-size: 2.5rem;
+                        &:hover {
+                            transition: all .2s ease-in-out;
+                            color: rgb(68, 68, 68);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .hover-items {
+                    transition: all 0.2s ease-in-out;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        h5 {
+            font-size: 1.65rem;
+            font-weight: 400;
+            color: white;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                color: #6fffe9;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.port-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 3rem;
+    flex-wrap: wrap;
+}
+
+.btn-portfolio {
+    padding: .6rem 2rem;
+    background-color: #50cebb;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    margin: .4rem .3rem;
+    transition: all .2s ease-in-out;
+    &:hover{
+        background-color: #6fffe9;
+    }
+    &:active{
+        background-color: #6fffe9;
+    }
+    &:focus{
+        background-color: #6fffe9;
+    }
+}
+

@@ -1,0 +1,78 @@
+.nav-transition-holder{
+    height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.NavBar {
+    height: 100vh;
+    .nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .profile {
+            width: 100%;
+            text-align: center;
+            margin-top: 1rem;
+            border-bottom: 1px solid #2e344e;
+            img {
+                width: 70%;
+                border-radius: 100%;
+                border: 5px solid #2e344e;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .nav-items{
+            width: 100%;
+            .nav-item{
+                list-style: none;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    font-size: inherit;
+                    color: white;
+                    display: block;
+                    padding: .5rem 0;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: .4rem;
+                        height: 100%;
+                        background-color: #6fffe9a6;
+                        transform-origin: bottom;
+                        transform: scalex(0);
+                        overflow: hidden;
+                        transition: .6s, .2s, width .3s cubic-bezier(.64,-0.02,.43,1.03) ;
+                    }
+
+                    &:hover::before{
+                        width: 100%;
+                        transform: scalex(1);
+                    }
+                }
+            }
+        }
+
+        .footer {
+            width: 100%;
+            border-top: 1px solid #2e344e;
+            p{
+                text-align: center;
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+.active{
+    background-color: #5ff7e0de;
+}
