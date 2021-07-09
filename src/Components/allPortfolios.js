@@ -72,7 +72,7 @@ const portfolios = [
     },
     {
         id: 7,
-        category: 'Test Port',
+        category: 'Web',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
         icon1: 'G',
