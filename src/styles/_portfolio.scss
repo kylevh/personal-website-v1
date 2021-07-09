@@ -71,8 +71,7 @@
             color: white;
             transition: all 0.2s ease-in-out;
             &:hover {
-                color: #6fffe9;
-                cursor: pointer;
+                color: #f77f00;
             }
         }
     }
@@ -88,7 +87,7 @@
 
 .btn-portfolio {
     padding: .6rem 2rem;
-    background-color: #50cebb;
+    background-color: #f77f00;
     border: none;
     outline: none;
     cursor: pointer;
@@ -98,13 +97,13 @@
     margin: .4rem .3rem;
     transition: all .2s ease-in-out;
     &:hover{
-        background-color: #6fffe9;
+        background-color: #f7800083;
     }
     &:active{
-        background-color: #6fffe9;
+        background-color: #f7800083;
     }
     &:focus{
-        background-color: #6fffe9;
+        background-color: #f7800083;
     }
 }
 

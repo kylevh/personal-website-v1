@@ -6,6 +6,8 @@ import BlogPage from './Pages/BlogPage';
 import ContactPage from './Pages/ContactPage';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import AboutPage from './Pages/AboutPage';
+import BlogItemPage from './Pages/Blog/BlogItemPage';
+import BlogItemPage2 from './Pages/Blog/BlogItemPage2';
 import { useState, useEffect } from 'react'
 import OutsideClickHandler from 'react-outside-click-handler';
 import ClipLoader from "react-spinners/PuffLoader";
@@ -18,7 +20,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 300)
+    }, 3000)
   }, [])
 
   const [navToggle, setNavToggle] = useState(false);
@@ -35,7 +37,7 @@ function App() {
 
         loading ?
           <div className="loading-holder">
-            <ClipLoader className="loader" color={"#037FFF"} loading={loading} size={70} />
+            <ClipLoader className="loader" color={"#f77f00"} loading={loading} size={70} />
           </div>
           :
           <div className="MAINSTUFF">
@@ -46,7 +48,7 @@ function App() {
                 setNavToggle(false);
               }}>
               <div className={`sidebar ${navToggle ? 'nav-toggle' : ''}`}>
-                  <NavBar />
+                <NavBar />
               </div>
             </OutsideClickHandler>
             <div className="nav-btn" onClick={navClick}>
@@ -57,7 +59,7 @@ function App() {
 
             {/* Main content Stuff */}
             <div className="main-content">
-            <Route path='/' component={ParticleBackground} exact/>
+              <Route path='/' component={ParticleBackground} exact />
               <div className="content">
                 <AnimatePresence exitBeforeEnter>
                   <Switch location={location} key={location.pathname}>
@@ -84,6 +86,19 @@ function App() {
                         <ContactPage />
                       </motion.div>
                     </Route>
+
+
+                    <Route path="/blog/1" exact>
+                      <motion.div initial={{ opacity: 0, y: 150 }} animate={{ opacity: 1, y: 0 }} transition={{ ease: "easeInOut", duration: .4 }} exit={{ opacity: 0 }}>
+                        <BlogItemPage />
+                      </motion.div>
+                    </Route>
+                    <Route path="/blog/2" exact>
+                      <motion.div initial={{ opacity: 0, y: 150 }} animate={{ opacity: 1, y: 0 }} transition={{ ease: "easeInOut", duration: .4 }} exit={{ opacity: 0 }}>
+                        <BlogItemPage2 />
+                      </motion.div>
+                    </Route>
+
                   </Switch>
                 </AnimatePresence>
 

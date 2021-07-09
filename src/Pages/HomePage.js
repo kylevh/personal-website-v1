@@ -10,16 +10,16 @@ import ParticleBackground from '../Particles/ParticleBackground'
 function HomePage() {
     return (
         <div className="HomePage">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "easeInOut", duration: .3 }} exit={{ opacity: 0 }}>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "easeInOut", duration: .4 }} exit={{ opacity: 0 }}>
 
                 <div className="animate-container">
                     <header className="hero">
                         <h1 className="hero-text">
-                            Hello, my name is
+                            Hi there! My name is
                             <span> Kyle Huynh</span>
                         </h1>
                         <p className="hero-sub-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A perspiciatis, libero voluptate eligendi accusamus laudantium. Sunt, culpa? Rem, architecto consectetur.
+                            I like making software and hitting buttons.
                         </p>
 
                         <div className="icons">

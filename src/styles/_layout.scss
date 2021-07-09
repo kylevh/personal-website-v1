@@ -28,8 +28,10 @@
         margin-left: 16%;
         background-color: #10121b;
         min-height: 100vh;
+        background-position: 80% 40%; 
+        background-size: 100%;
         background-image: url("../img/dotted.png");
-        background-size: 90%;
+        background-attachment: fixed;
         display: grid;
         position: relative;
 
@@ -72,7 +74,7 @@ canvas {
         border-radius: 2px;
         height: 0.3rem;
         width: 100%;
-        background-color: rgb(0, 140, 255);
+        background-color: #f77f00;
         display: none;
         pointer-events: none;
         &:not(:last-child) {

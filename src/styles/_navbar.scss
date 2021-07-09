@@ -17,14 +17,14 @@
 
         .profile {
             width: 100%;
+            padding-top: 7rem;
             text-align: center;
             margin-top: 1rem;
-            border-bottom: 1px solid #2e344e;
             img {
                 width: 70%;
                 border-radius: 100%;
                 border: 5px solid #2e344e;
-                margin-bottom: 1rem;
+                margin-bottom: -10rem;
             }
         }
 
@@ -47,7 +47,7 @@
                         left: 0;
                         width: .4rem;
                         height: 100%;
-                        background-color: #6fffe9a6;
+                        background-color: #f780007e;
                         transform-origin: bottom;
                         transform: scalex(0);
                         overflow: hidden;
@@ -74,5 +74,5 @@
 }
 
 .active{
-    background-color: #5ff7e0de;
+    background-color: #f77f00;
 }

@@ -34,7 +34,7 @@ function PortfolioItems({ menuItem }) {
                             {item.title}
                         </h5>
                         <p>
-                            Placeholder Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, natus?
+                            {item.desc}
                         </p>
                     </div>
                 })

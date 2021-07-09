@@ -17,7 +17,7 @@
         transition: all 0.15s ease-in-out;
         &:hover {
             transform: scale(1.1);
-            color: #6fffe9;
+            color: #f77f00;
 
         }
 
@@ -35,6 +35,12 @@
             }
         }
     }
+}
+
+.blog-item-title{
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+    color:#f77f00;
 }
 
 .b-title {
