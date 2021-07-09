@@ -44,6 +44,7 @@
                 opacity: 0;
                 visibility: hidden;
                 li {
+                    display: flex;
                     a {
                         color: rgba(255, 255, 255, 0.795);
                         padding: 2rem;
@@ -53,6 +54,7 @@
                             color: rgb(68, 68, 68);
                         }
                     }
+
                 }
             }
 
@@ -105,5 +107,20 @@
     &:focus{
         background-color: #f7800083;
     }
+}
+
+.btn-tag {
+    padding: .2rem .6rem;
+    background-color: #f77f00;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    margin: .4rem .3rem;
+    transition: all .2s ease-in-out;
+    cursor:default;
 }
 

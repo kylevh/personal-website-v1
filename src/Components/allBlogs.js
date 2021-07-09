@@ -1,6 +1,4 @@
-import blog1 from '../img/blogs/blog1.svg';
-import blog2 from '../img/blogs/blog2.svg';
-import blog3 from '../img/blogs/blog3.svg';
+import blog1 from '../img/blogs/blog1.png';
 
 
 export default [
@@ -15,7 +13,7 @@ export default [
     },
     {
         id: 2,
-        image: blog2,
+        image: blog1,
         title: 'Second blog!',
         link: '/blog/2',
         date: '21',

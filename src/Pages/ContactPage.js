@@ -5,9 +5,8 @@ import Title from '../Components/Title';
 function ContactPage() {
     return (
         <div className="ContactPage">
-            <Title title="test" span="test"/>
+            <Title span={"Contact"} title={"Contact"} />
             <Contact />
-            
         </div>
     )
 }

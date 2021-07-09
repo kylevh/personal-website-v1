@@ -17,15 +17,14 @@ function PortfolioItems({ menuItem }) {
                                             <FaGithub className="portfolioIcon gh" />
                                         </a>
                                         :
-                                        <div></div>
+                                        <div />
                                     }
                                     {item.link2 ?
-
                                         <a href={"http://" + item.link2} target="_blank" rel="noopener noreferrer">
                                             <FaExternalLinkAlt className="portfolioIcon ext" />
                                         </a>
                                         :
-                                        <div></div>
+                                        <div />
                                     }
                                 </li>
                             </ul>
@@ -36,6 +35,11 @@ function PortfolioItems({ menuItem }) {
                         <p>
                             {item.desc}
                         </p>
+                        {
+                            item.categories.map((cat) => {
+                                return <button type="button" className="btn-tag">{cat}</button>
+                            })
+                        }
                     </div>
                 })
             }

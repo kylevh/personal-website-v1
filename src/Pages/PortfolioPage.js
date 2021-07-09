@@ -29,7 +29,7 @@ function PortfolioPage() {
                 <Title title={'Portfolio'} span={'portfolio'} />
             </div>
             <div className="portfolios">
-                <Categories filter={filter} categories= {categories}/>
+                {/* <Categories filter={filter} categories= {categories}/> */}
                 <PortfolioItems menuItem={portfolioItems}/>
             </div>
         </div>

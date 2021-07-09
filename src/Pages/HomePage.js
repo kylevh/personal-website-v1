@@ -19,7 +19,7 @@ function HomePage() {
                             <span> Kyle Huynh</span>
                         </h1>
                         <p className="hero-sub-text">
-                            I like making software and hitting buttons.
+                            I build stuff for the web.
                         </p>
 
                         <div className="icons">

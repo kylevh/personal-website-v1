@@ -1,3 +1,41 @@
 .contactMe{
+    padding-top: 10rem;
     margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-contact {
+    border-radius: 5px;
+    padding: 1rem 1.6rem;
+    background-color: #f77f00;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    position: relative;
+    justify-self: center;
+    &::after {
+        border-radius: 5px;
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0.3rem;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.267);
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover::after {
+        border-radius: 5px;
+        width: 100%;
+    }
 }
