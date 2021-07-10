@@ -16,9 +16,8 @@ function BlogItemPage() {
                         I realized this was the perfect oppurtunity to learn the basics of react while building my own website. 
                     </p><br/>
                     <p>
-                        This website was built using React.js and SASS and deployed using Vercel. You can find the GitHub repo
-                        in the 'Portfolio' section. You're free to use the code however you'd like as long as you give credit where it's due.
-                        Please don't straight-up claim my work as your own.
+                        This website was built using React.js and SCSS and deployed using Vercel. You can find the GitHub repo
+                        for this site in the 'Portfolio' section.
                     </p><br/><br/>
                     <p>- Kyle Huynh</p>
 
