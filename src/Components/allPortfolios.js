@@ -3,6 +3,7 @@ import pokepokeIMG from '../img/portImages/portfolio2.png';
 import simplytasks from '../img/portImages/portfolio3.png';
 import Courseeval from '../img/portImages/portfolio4.png';
 import portfoliwebsite from '../img/portImages/portfolio5.png';
+import blog1 from '../img/blogs/blog1.png';
 
 const portfolios = [
     {
@@ -60,6 +61,16 @@ const portfolios = [
         desc: 'A 2D video game created for the UW Game Dev Fall Game Jam using C# and Unity',
         categories: ['Unity', 'C#', '2D Graphics']
     },
+    {
+        id: 6,
+        category: 'Python',
+        link1: 'github.com/kylevh/imsg-autorespond',
+        icon1: 'G',
+        image: blog1,
+        title: 'iMessage Autoresponder',
+        desc: `A script that will automatically read and respond to text messages for when you're away`,
+        categories: ['Python', 'AppleScript']
+    }
 ]
 
 export default portfolios;
