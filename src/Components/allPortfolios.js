@@ -4,6 +4,7 @@ import simplytasks from '../img/portImages/portfolio3.png';
 import Courseeval from '../img/portImages/portfolio4.png';
 import portfoliwebsite from '../img/portImages/portfolio5.png';
 import blog1 from '../img/blogs/blog1.png';
+import penguin from '../img/blogs/penguin.png';
 
 const portfolios = [
     {
@@ -70,6 +71,16 @@ const portfolios = [
         title: 'iMessage Autoresponder',
         desc: `A script that will automatically read and respond to text messages for when you're away`,
         categories: ['Python', 'AppleScript']
+    },
+    {
+        id: 7,
+        category: 'Unity',
+        link2: 'kylevh.itch.io/penguin-wars',
+        icon2: 'Y',
+        image: penguin,
+        title: 'Penguin Wars - 3D Strategy Game',
+        desc: `A 3D Turn-based strategy game developed for the UW Tri-Campus Game Jam 2021`,
+        categories: ['Unity', 'C#', '3D']
     }
 ]
 
