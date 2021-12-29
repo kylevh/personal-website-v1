@@ -18,7 +18,7 @@ function ImageSection() {
                     the Husky Game Dev Club as vice-president, which is dedicated to teaching students the process of game development and coding.
                 </p>
                 <p className="about-text-2">
-                    Outside of programming, I enjoy cooking, gaming, doing graphic designs, and playing the piano.
+                    Outside of programming, I enjoy cooking, gaming, doing graphic design, and film photography.
 
                 </p>
 
