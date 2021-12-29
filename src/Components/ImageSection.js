@@ -1,5 +1,6 @@
 import React from 'react'
 import about from '../img/about.jpg';
+import {    Link } from 'react-router-dom';
 
 function ImageSection() {
     return (
@@ -11,7 +12,7 @@ function ImageSection() {
                 <h4>I am a<span> Software Engineer</span></h4>
                 <p className="about-text">
                     I'm currently an undergraduate in my third year studying Computer Science and Software Engineering
-                    at the <span>University of Washington Bothell</span>. 
+                    at the <span>University of Washington Bothell</span>.
                 </p>
                 <p className="about-text-2">
                     I work as a web assistant for the UW Department of Lab Medicine and manage the
@@ -39,9 +40,9 @@ function ImageSection() {
                         <p>: Computer Science and Software Engineering</p>
                     </div>
                 </div> */}
-                <a href="../img/kvh_resume.docx" download>
+                <Link to="/kvh_resume.pdf" target="_blank" download>
                     <button className="btn">Download Resume</button>
-                </a>
+                </Link>
             </div>
         </div>
     )
