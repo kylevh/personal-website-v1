@@ -5,7 +5,7 @@ import Courseeval from '../img/portImages/portfolio4.png';
 import portfoliwebsite from '../img/portImages/portfolio5.png';
 import blog1 from '../img/blogs/blog1.png';
 import penguin from '../img/blogs/penguin.png';
-import kualnote from '../img/portImages/kualnote.png';
+import kualnote from '../img/portImages/kualnotes.jpg';
 
 const portfolios = [
     {
