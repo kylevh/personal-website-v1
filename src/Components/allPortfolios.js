@@ -5,6 +5,7 @@ import Courseeval from '../img/portImages/portfolio4.png';
 import portfoliwebsite from '../img/portImages/portfolio5.png';
 import blog1 from '../img/blogs/blog1.png';
 import penguin from '../img/blogs/penguin.png';
+import kualnote from '../img/portImages/kualnotes.jpg';
 
 const portfolios = [
     {
@@ -81,6 +82,16 @@ const portfolios = [
         title: 'Penguin Wars - 3D Strategy Game',
         desc: `A 3D Turn-based strategy game developed for the UW Tri-Campus Game Jam 2021`,
         categories: ['Unity', 'C#', '3D']
+    },
+    {
+        id: 8,
+        category: 'React.js',
+        link2: 'devpost.com/software/kual-notes?ref_content=my-projects-tab&ref_feature=my_projects',
+        icon2: 'Y',
+        image: kualnote,
+        title: 'Kual. Notes - An AI-driven mental health journaling app',
+        desc: `UI/UX prototype for a mental health journaling app that uses machine learning to generate health recommendations based on user input`,
+        categories: ['React.js', 'CSS', 'Python', 'JavaScript']
     }
 ]
 
